@@ -1,0 +1,6 @@
+<input type="text" [(ngModel)]='serverName' >
+<button class="btn btn-primary" (click)="onClickButton()" >Add a server</button>
+<p *ngIf='shownPass'>Password is Tuna{{serverName}}</p>
+<div *ngFor="let times of shownTimes" [ngStyle]="{backgroundColor: times >= 5 ? 'blue' : 'transparent'}" [ngClass]="{'blue': times >= 5 }">{{ times }}</div>
+<app-server></app-server>
+<app-server></app-server>
